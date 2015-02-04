@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E86AE43171C6AE000B18D26 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E86AE42171C6AE000B18D26 /* MediaPlayer.framework */; };
+		7E86AE46171C6C3000B18D26 /* airplayIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E86AE44171C6C3000B18D26 /* airplayIcon.png */; };
+		7E86AE47171C6C3000B18D26 /* airplayIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E86AE45171C6C3000B18D26 /* airplayIcon@2x.png */; };
+		7E8F878217181F8E006F681D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8F878117181F8E006F681D /* UIKit.framework */; };
+		7E8F878417181F8E006F681D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8F878317181F8E006F681D /* Foundation.framework */; };
+		7E8F878617181F8E006F681D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8F878517181F8E006F681D /* CoreGraphics.framework */; };
+		7E8F878C17181F8E006F681D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F878A17181F8E006F681D /* InfoPlist.strings */; };
+		7E8F878E17181F8E006F681D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F878D17181F8E006F681D /* main.m */; };
+		7E8F879217181F8E006F681D /* BTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F879117181F8E006F681D /* BTAppDelegate.m */; };
+		7E8F879417181F8E006F681D /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F879317181F8E006F681D /* Default.png */; };
+		7E8F879617181F8E006F681D /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F879517181F8E006F681D /* Default@2x.png */; };
+		7E8F879817181F8E006F681D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F879717181F8E006F681D /* Default-568h@2x.png */; };
+		7E8F879B17181F8E006F681D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F879917181F8E006F681D /* MainStoryboard.storyboard */; };
+		7E8F879E17181F8E006F681D /* BTVideoPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F879D17181F8E006F681D /* BTVideoPlayerViewController.m */; };
+		7E8F87AC17182D84006F681D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8F87AB17182D84006F681D /* AVFoundation.framework */; };
+		7E8F87AE17182D8E006F681D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8F87AD17182D8E006F681D /* QuartzCore.framework */; };
+		7E8F87B317184D6B006F681D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E8F87B217184D6B006F681D /* CoreMedia.framework */; };
+		7E8F87C617185035006F681D /* closeIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87B617185035006F681D /* closeIcon.png */; };
+		7E8F87C717185035006F681D /* closeIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87B717185035006F681D /* closeIcon@2x.png */; };
+		7E8F87C817185035006F681D /* iconBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87B817185035006F681D /* iconBack.png */; };
+		7E8F87C917185035006F681D /* iconBack@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87B917185035006F681D /* iconBack@2x.png */; };
+		7E8F87CA17185035006F681D /* muteIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87BA17185035006F681D /* muteIcon.png */; };
+		7E8F87CB17185035006F681D /* muteIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87BB17185035006F681D /* muteIcon@2x.png */; };
+		7E8F87CC17185035006F681D /* pauseIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87BC17185035006F681D /* pauseIcon.png */; };
+		7E8F87CD17185035006F681D /* pauseIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87BD17185035006F681D /* pauseIcon@2x.png */; };
+		7E8F87CE17185035006F681D /* playIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87BE17185035006F681D /* playIcon.png */; };
+		7E8F87CF17185035006F681D /* playIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87BF17185035006F681D /* playIcon@2x.png */; };
+		7E8F87D017185035006F681D /* sliderThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87C017185035006F681D /* sliderThumb.png */; };
+		7E8F87D117185035006F681D /* sliderThumb@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87C117185035006F681D /* sliderThumb@2x.png */; };
+		7E8F87D217185035006F681D /* slowIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87C217185035006F681D /* slowIcon.png */; };
+		7E8F87D317185035006F681D /* slowIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87C317185035006F681D /* slowIcon@2x.png */; };
+		7E8F87D417185035006F681D /* unmuteIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87C417185035006F681D /* unmuteIcon.png */; };
+		7E8F87D517185035006F681D /* unmuteIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87C517185035006F681D /* unmuteIcon@2x.png */; };
+		7E8F87DD1718503D006F681D /* TNMediaSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F87D71718503D006F681D /* TNMediaSlider.m */; };
+		7E8F87DE1718503D006F681D /* TNProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F87D91718503D006F681D /* TNProgress.m */; };
+		7E8F87DF1718503D006F681D /* TNTimelineBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F87DB1718503D006F681D /* TNTimelineBar.m */; };
+		7E8F87E01718503D006F681D /* TNTimelineBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87DC1718503D006F681D /* TNTimelineBar.xib */; };
+		7E8F87E517185098006F681D /* TNVideoOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F87E317185098006F681D /* TNVideoOverlay.m */; };
+		7E8F87E617185098006F681D /* TNVideoOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87E417185098006F681D /* TNVideoOverlay.xib */; };
+		7E92DB861A8220F800833E16 /* BigBuckBunny_640x360.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87AF17182F62006F681D /* BigBuckBunny_640x360.m4v */; };
+		7EA115AE171C18D6005AAAE3 /* BTMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA115AD171C18D6005AAAE3 /* BTMenuViewController.m */; };
+		7EA115B1171C3481005AAAE3 /* stopIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EA115AF171C3481005AAAE3 /* stopIcon.png */; };
+		7EA115B2171C3481005AAAE3 /* stopIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EA115B0171C3481005AAAE3 /* stopIcon@2x.png */; };
+		7EBDAE92171D4FF000F57A8A /* BTMoviePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAE8F171D4FF000F57A8A /* BTMoviePlayerController.m */; };
+		7EBDAE93171D4FF000F57A8A /* BTMoviePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EBDAE91171D4FF000F57A8A /* BTMoviePlayerView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E86AE42171C6AE000B18D26 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		7E86AE44171C6C3000B18D26 /* airplayIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = airplayIcon.png; path = Images/airplayIcon.png; sourceTree = "<group>"; };
+		7E86AE45171C6C3000B18D26 /* airplayIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "airplayIcon@2x.png"; path = "Images/airplayIcon@2x.png"; sourceTree = "<group>"; };
+		7E8F877E17181F8E006F681D /* BTMoviePlayerController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BTMoviePlayerController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E8F878117181F8E006F681D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7E8F878317181F8E006F681D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E8F878517181F8E006F681D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7E8F878917181F8E006F681D /* BTMoviePlayerController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BTMoviePlayerController-Info.plist"; sourceTree = "<group>"; };
+		7E8F878B17181F8E006F681D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E8F878D17181F8E006F681D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E8F878F17181F8E006F681D /* BTMoviePlayerController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BTMoviePlayerController-Prefix.pch"; sourceTree = "<group>"; };
+		7E8F879017181F8E006F681D /* BTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTAppDelegate.h; sourceTree = "<group>"; };
+		7E8F879117181F8E006F681D /* BTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTAppDelegate.m; sourceTree = "<group>"; };
+		7E8F879317181F8E006F681D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		7E8F879517181F8E006F681D /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		7E8F879717181F8E006F681D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		7E8F879A17181F8E006F681D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		7E8F879C17181F8E006F681D /* BTVideoPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BTVideoPlayerViewController.h; sourceTree = "<group>"; };
+		7E8F879D17181F8E006F681D /* BTVideoPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BTVideoPlayerViewController.m; sourceTree = "<group>"; };
+		7E8F87AB17182D84006F681D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		7E8F87AD17182D8E006F681D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7E8F87AF17182F62006F681D /* BigBuckBunny_640x360.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = BigBuckBunny_640x360.m4v; sourceTree = "<group>"; };
+		7E8F87B217184D6B006F681D /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		7E8F87B617185035006F681D /* closeIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = closeIcon.png; path = Images/closeIcon.png; sourceTree = "<group>"; };
+		7E8F87B717185035006F681D /* closeIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "closeIcon@2x.png"; path = "Images/closeIcon@2x.png"; sourceTree = "<group>"; };
+		7E8F87B817185035006F681D /* iconBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iconBack.png; path = Images/iconBack.png; sourceTree = "<group>"; };
+		7E8F87B917185035006F681D /* iconBack@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iconBack@2x.png"; path = "Images/iconBack@2x.png"; sourceTree = "<group>"; };
+		7E8F87BA17185035006F681D /* muteIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = muteIcon.png; path = Images/muteIcon.png; sourceTree = "<group>"; };
+		7E8F87BB17185035006F681D /* muteIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "muteIcon@2x.png"; path = "Images/muteIcon@2x.png"; sourceTree = "<group>"; };
+		7E8F87BC17185035006F681D /* pauseIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pauseIcon.png; path = Images/pauseIcon.png; sourceTree = "<group>"; };
+		7E8F87BD17185035006F681D /* pauseIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pauseIcon@2x.png"; path = "Images/pauseIcon@2x.png"; sourceTree = "<group>"; };
+		7E8F87BE17185035006F681D /* playIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = playIcon.png; path = Images/playIcon.png; sourceTree = "<group>"; };
+		7E8F87BF17185035006F681D /* playIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "playIcon@2x.png"; path = "Images/playIcon@2x.png"; sourceTree = "<group>"; };
+		7E8F87C017185035006F681D /* sliderThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sliderThumb.png; path = Images/sliderThumb.png; sourceTree = "<group>"; };
+		7E8F87C117185035006F681D /* sliderThumb@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sliderThumb@2x.png"; path = "Images/sliderThumb@2x.png"; sourceTree = "<group>"; };
+		7E8F87C217185035006F681D /* slowIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = slowIcon.png; path = Images/slowIcon.png; sourceTree = "<group>"; };
+		7E8F87C317185035006F681D /* slowIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slowIcon@2x.png"; path = "Images/slowIcon@2x.png"; sourceTree = "<group>"; };
+		7E8F87C417185035006F681D /* unmuteIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unmuteIcon.png; path = Images/unmuteIcon.png; sourceTree = "<group>"; };
+		7E8F87C517185035006F681D /* unmuteIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unmuteIcon@2x.png"; path = "Images/unmuteIcon@2x.png"; sourceTree = "<group>"; };
+		7E8F87D61718503D006F681D /* TNMediaSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNMediaSlider.h; path = Scrubber/TNMediaSlider.h; sourceTree = "<group>"; };
+		7E8F87D71718503D006F681D /* TNMediaSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TNMediaSlider.m; path = Scrubber/TNMediaSlider.m; sourceTree = "<group>"; };
+		7E8F87D81718503D006F681D /* TNProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNProgress.h; path = Scrubber/TNProgress.h; sourceTree = "<group>"; };
+		7E8F87D91718503D006F681D /* TNProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TNProgress.m; path = Scrubber/TNProgress.m; sourceTree = "<group>"; };
+		7E8F87DA1718503D006F681D /* TNTimelineBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNTimelineBar.h; path = Scrubber/TNTimelineBar.h; sourceTree = "<group>"; };
+		7E8F87DB1718503D006F681D /* TNTimelineBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TNTimelineBar.m; path = Scrubber/TNTimelineBar.m; sourceTree = "<group>"; };
+		7E8F87DC1718503D006F681D /* TNTimelineBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TNTimelineBar.xib; path = Scrubber/TNTimelineBar.xib; sourceTree = "<group>"; };
+		7E8F87E217185098006F681D /* TNVideoOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNVideoOverlay.h; path = Overlay/TNVideoOverlay.h; sourceTree = "<group>"; };
+		7E8F87E317185098006F681D /* TNVideoOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TNVideoOverlay.m; path = Overlay/TNVideoOverlay.m; sourceTree = "<group>"; };
+		7E8F87E417185098006F681D /* TNVideoOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TNVideoOverlay.xib; path = Overlay/TNVideoOverlay.xib; sourceTree = "<group>"; };
+		7EA115AC171C18D6005AAAE3 /* BTMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTMenuViewController.h; sourceTree = "<group>"; };
+		7EA115AD171C18D6005AAAE3 /* BTMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTMenuViewController.m; sourceTree = "<group>"; };
+		7EA115AF171C3481005AAAE3 /* stopIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stopIcon.png; path = Images/stopIcon.png; sourceTree = "<group>"; };
+		7EA115B0171C3481005AAAE3 /* stopIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "stopIcon@2x.png"; path = "Images/stopIcon@2x.png"; sourceTree = "<group>"; };
+		7EBDAE8E171D4FF000F57A8A /* BTMoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTMoviePlayerController.h; path = Classes/BTMoviePlayerController.h; sourceTree = "<group>"; };
+		7EBDAE8F171D4FF000F57A8A /* BTMoviePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTMoviePlayerController.m; path = Classes/BTMoviePlayerController.m; sourceTree = "<group>"; };
+		7EBDAE90171D4FF000F57A8A /* BTMoviePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTMoviePlayerView.h; path = Classes/BTMoviePlayerView.h; sourceTree = "<group>"; };
+		7EBDAE91171D4FF000F57A8A /* BTMoviePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTMoviePlayerView.m; path = Classes/BTMoviePlayerView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E8F877B17181F8E006F681D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E86AE43171C6AE000B18D26 /* MediaPlayer.framework in Frameworks */,
+				7E8F87B317184D6B006F681D /* CoreMedia.framework in Frameworks */,
+				7E8F87AE17182D8E006F681D /* QuartzCore.framework in Frameworks */,
+				7E8F87AC17182D84006F681D /* AVFoundation.framework in Frameworks */,
+				7E8F878217181F8E006F681D /* UIKit.framework in Frameworks */,
+				7E8F878417181F8E006F681D /* Foundation.framework in Frameworks */,
+				7E8F878617181F8E006F681D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E8F877517181F8E006F681D = {
+			isa = PBXGroup;
+			children = (
+				7E8F878717181F8E006F681D /* BTMoviePlayerController */,
+				7E8F878017181F8E006F681D /* Frameworks */,
+				7E8F877F17181F8E006F681D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E8F877F17181F8E006F681D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E8F877E17181F8E006F681D /* BTMoviePlayerController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E8F878017181F8E006F681D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E86AE42171C6AE000B18D26 /* MediaPlayer.framework */,
+				7E8F87B217184D6B006F681D /* CoreMedia.framework */,
+				7E8F87AD17182D8E006F681D /* QuartzCore.framework */,
+				7E8F87AB17182D84006F681D /* AVFoundation.framework */,
+				7E8F878117181F8E006F681D /* UIKit.framework */,
+				7E8F878317181F8E006F681D /* Foundation.framework */,
+				7E8F878517181F8E006F681D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E8F878717181F8E006F681D /* BTMoviePlayerController */ = {
+			isa = PBXGroup;
+			children = (
+				7E8F87A717182166006F681D /* Classes */,
+				7E8F879017181F8E006F681D /* BTAppDelegate.h */,
+				7E8F879117181F8E006F681D /* BTAppDelegate.m */,
+				7E8F879C17181F8E006F681D /* BTVideoPlayerViewController.h */,
+				7E8F879D17181F8E006F681D /* BTVideoPlayerViewController.m */,
+				7EA115AC171C18D6005AAAE3 /* BTMenuViewController.h */,
+				7EA115AD171C18D6005AAAE3 /* BTMenuViewController.m */,
+				7E8F879917181F8E006F681D /* MainStoryboard.storyboard */,
+				7E8F87E117185073006F681D /* Overlay */,
+				7E8F87B417185026006F681D /* Scrubber */,
+				7E8F87B51718502B006F681D /* Images */,
+				7E8F87B117182F75006F681D /* Resources */,
+				7E8F878817181F8E006F681D /* Supporting Files */,
+			);
+			path = BTMoviePlayerController;
+			sourceTree = "<group>";
+		};
+		7E8F878817181F8E006F681D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E8F878917181F8E006F681D /* BTMoviePlayerController-Info.plist */,
+				7E8F878A17181F8E006F681D /* InfoPlist.strings */,
+				7E8F878D17181F8E006F681D /* main.m */,
+				7E8F878F17181F8E006F681D /* BTMoviePlayerController-Prefix.pch */,
+				7E8F879317181F8E006F681D /* Default.png */,
+				7E8F879517181F8E006F681D /* Default@2x.png */,
+				7E8F879717181F8E006F681D /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E8F87A717182166006F681D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7EBDAE8E171D4FF000F57A8A /* BTMoviePlayerController.h */,
+				7EBDAE8F171D4FF000F57A8A /* BTMoviePlayerController.m */,
+				7EBDAE90171D4FF000F57A8A /* BTMoviePlayerView.h */,
+				7EBDAE91171D4FF000F57A8A /* BTMoviePlayerView.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		7E8F87B117182F75006F681D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7E8F87AF17182F62006F681D /* BigBuckBunny_640x360.m4v */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7E8F87B417185026006F681D /* Scrubber */ = {
+			isa = PBXGroup;
+			children = (
+				7E8F87D61718503D006F681D /* TNMediaSlider.h */,
+				7E8F87D71718503D006F681D /* TNMediaSlider.m */,
+				7E8F87D81718503D006F681D /* TNProgress.h */,
+				7E8F87D91718503D006F681D /* TNProgress.m */,
+				7E8F87DA1718503D006F681D /* TNTimelineBar.h */,
+				7E8F87DB1718503D006F681D /* TNTimelineBar.m */,
+				7E8F87DC1718503D006F681D /* TNTimelineBar.xib */,
+			);
+			name = Scrubber;
+			sourceTree = "<group>";
+		};
+		7E8F87B51718502B006F681D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				7E86AE44171C6C3000B18D26 /* airplayIcon.png */,
+				7E86AE45171C6C3000B18D26 /* airplayIcon@2x.png */,
+				7EA115AF171C3481005AAAE3 /* stopIcon.png */,
+				7EA115B0171C3481005AAAE3 /* stopIcon@2x.png */,
+				7E8F87B617185035006F681D /* closeIcon.png */,
+				7E8F87B717185035006F681D /* closeIcon@2x.png */,
+				7E8F87B817185035006F681D /* iconBack.png */,
+				7E8F87B917185035006F681D /* iconBack@2x.png */,
+				7E8F87BA17185035006F681D /* muteIcon.png */,
+				7E8F87BB17185035006F681D /* muteIcon@2x.png */,
+				7E8F87BC17185035006F681D /* pauseIcon.png */,
+				7E8F87BD17185035006F681D /* pauseIcon@2x.png */,
+				7E8F87BE17185035006F681D /* playIcon.png */,
+				7E8F87BF17185035006F681D /* playIcon@2x.png */,
+				7E8F87C017185035006F681D /* sliderThumb.png */,
+				7E8F87C117185035006F681D /* sliderThumb@2x.png */,
+				7E8F87C217185035006F681D /* slowIcon.png */,
+				7E8F87C317185035006F681D /* slowIcon@2x.png */,
+				7E8F87C417185035006F681D /* unmuteIcon.png */,
+				7E8F87C517185035006F681D /* unmuteIcon@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		7E8F87E117185073006F681D /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				7E8F87E217185098006F681D /* TNVideoOverlay.h */,
+				7E8F87E317185098006F681D /* TNVideoOverlay.m */,
+				7E8F87E417185098006F681D /* TNVideoOverlay.xib */,
+			);
+			name = Overlay;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E8F877D17181F8E006F681D /* BTMoviePlayerController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E8F87A117181F8E006F681D /* Build configuration list for PBXNativeTarget "BTMoviePlayerController" */;
+			buildPhases = (
+				7E8F877A17181F8E006F681D /* Sources */,
+				7E8F877B17181F8E006F681D /* Frameworks */,
+				7E8F877C17181F8E006F681D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BTMoviePlayerController;
+			productName = BTMoviePlayerController;
+			productReference = 7E8F877E17181F8E006F681D /* BTMoviePlayerController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E8F877617181F8E006F681D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Brightec Ltd";
+			};
+			buildConfigurationList = 7E8F877917181F8E006F681D /* Build configuration list for PBXProject "BTMoviePlayerController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7E8F877517181F8E006F681D;
+			productRefGroup = 7E8F877F17181F8E006F681D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E8F877D17181F8E006F681D /* BTMoviePlayerController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E8F877C17181F8E006F681D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E92DB861A8220F800833E16 /* BigBuckBunny_640x360.m4v in Resources */,
+				7E8F878C17181F8E006F681D /* InfoPlist.strings in Resources */,
+				7E8F879417181F8E006F681D /* Default.png in Resources */,
+				7E8F879617181F8E006F681D /* Default@2x.png in Resources */,
+				7E8F879817181F8E006F681D /* Default-568h@2x.png in Resources */,
+				7E8F879B17181F8E006F681D /* MainStoryboard.storyboard in Resources */,
+				7E8F87C617185035006F681D /* closeIcon.png in Resources */,
+				7E8F87C717185035006F681D /* closeIcon@2x.png in Resources */,
+				7E8F87C817185035006F681D /* iconBack.png in Resources */,
+				7E8F87C917185035006F681D /* iconBack@2x.png in Resources */,
+				7E8F87CA17185035006F681D /* muteIcon.png in Resources */,
+				7E8F87CB17185035006F681D /* muteIcon@2x.png in Resources */,
+				7E8F87CC17185035006F681D /* pauseIcon.png in Resources */,
+				7E8F87CD17185035006F681D /* pauseIcon@2x.png in Resources */,
+				7E8F87CE17185035006F681D /* playIcon.png in Resources */,
+				7E8F87CF17185035006F681D /* playIcon@2x.png in Resources */,
+				7E8F87D017185035006F681D /* sliderThumb.png in Resources */,
+				7E8F87D117185035006F681D /* sliderThumb@2x.png in Resources */,
+				7E8F87D217185035006F681D /* slowIcon.png in Resources */,
+				7E8F87D317185035006F681D /* slowIcon@2x.png in Resources */,
+				7E8F87D417185035006F681D /* unmuteIcon.png in Resources */,
+				7E8F87D517185035006F681D /* unmuteIcon@2x.png in Resources */,
+				7E8F87E01718503D006F681D /* TNTimelineBar.xib in Resources */,
+				7E8F87E617185098006F681D /* TNVideoOverlay.xib in Resources */,
+				7EA115B1171C3481005AAAE3 /* stopIcon.png in Resources */,
+				7EA115B2171C3481005AAAE3 /* stopIcon@2x.png in Resources */,
+				7E86AE46171C6C3000B18D26 /* airplayIcon.png in Resources */,
+				7E86AE47171C6C3000B18D26 /* airplayIcon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E8F877A17181F8E006F681D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E8F878E17181F8E006F681D /* main.m in Sources */,
+				7E8F879217181F8E006F681D /* BTAppDelegate.m in Sources */,
+				7E8F879E17181F8E006F681D /* BTVideoPlayerViewController.m in Sources */,
+				7E8F87DD1718503D006F681D /* TNMediaSlider.m in Sources */,
+				7E8F87DE1718503D006F681D /* TNProgress.m in Sources */,
+				7E8F87DF1718503D006F681D /* TNTimelineBar.m in Sources */,
+				7E8F87E517185098006F681D /* TNVideoOverlay.m in Sources */,
+				7EA115AE171C18D6005AAAE3 /* BTMenuViewController.m in Sources */,
+				7EBDAE92171D4FF000F57A8A /* BTMoviePlayerController.m in Sources */,
+				7EBDAE93171D4FF000F57A8A /* BTMoviePlayerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7E8F878A17181F8E006F681D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E8F878B17181F8E006F681D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7E8F879917181F8E006F681D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E8F879A17181F8E006F681D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E8F879F17181F8E006F681D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7E8F87A017181F8E006F681D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E8F87A217181F8E006F681D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTMoviePlayerController/BTMoviePlayerController-Prefix.pch";
+				INFOPLIST_FILE = "BTMoviePlayerController/BTMoviePlayerController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7E8F87A317181F8E006F681D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BTMoviePlayerController/BTMoviePlayerController-Prefix.pch";
+				INFOPLIST_FILE = "BTMoviePlayerController/BTMoviePlayerController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E8F877917181F8E006F681D /* Build configuration list for PBXProject "BTMoviePlayerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E8F879F17181F8E006F681D /* Debug */,
+				7E8F87A017181F8E006F681D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E8F87A117181F8E006F681D /* Build configuration list for PBXNativeTarget "BTMoviePlayerController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E8F87A217181F8E006F681D /* Debug */,
+				7E8F87A317181F8E006F681D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E8F877617181F8E006F681D /* Project object */;
+}
