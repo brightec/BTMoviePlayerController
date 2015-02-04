@@ -155,8 +155,8 @@
     [self updateButtonStates];
     
     if (self.timer == nil) {
-//        self.timer = [NSTimer timerWithTimeInterval:0.5 target:self selector:@selector(timerIntervalFired:) userInfo:nil repeats:YES];
-//        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
+        self.timer = [NSTimer timerWithTimeInterval:0.5 target:self selector:@selector(timerIntervalFired:) userInfo:nil repeats:YES];
+        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
     }
 }
 
