@@ -35,7 +35,7 @@
         controller.contentURL = [NSURL URLWithString:@"http://www.largesound.com/ashborytour/sound/brobob.mp3"];
     }
     else if ([segue.identifier isEqual:@"NoVid"]) {
-        controller.contentURL = [NSURL URLWithString:@"http://static.clipcanvas.com/sample/clipcanvas_14348_offline.mp400"];        
+        controller.contentURL = [NSURL URLWithString:@"http://static.clipcanvas.com/sample/clipcanvas_14348_offline.mp400"];
     }
 }
 

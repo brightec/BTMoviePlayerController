@@ -11,5 +11,5 @@
 
 
 @interface BTVideoPlayerViewController : UIViewController <BTTimelineBarDelegate>
-@property (nonatomic) NSURL *contentURL;
+@property (copy, nonatomic) NSURL *contentURL;
 @end

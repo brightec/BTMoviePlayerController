@@ -48,12 +48,12 @@ static void *BTMoviePlayerControllerReadyForDisplayObservationContext = &BTMovie
 
 
 @interface BTMoviePlayerController ()
-@property (nonatomic) AVPlayerItem *playerItem;
-@property (nonatomic) AVPlayer *player;
-@property (nonatomic) BTMoviePlayerView *playerView;
-@property (nonatomic) BOOL seekToZeroBeforePlay;
-@property (nonatomic) NSMutableArray *errors;
-@property (nonatomic) AVMutableAudioMix *audioMix;
+@property (strong, nonatomic) AVPlayerItem *playerItem;
+@property (strong, nonatomic) AVPlayer *player;
+@property (strong, nonatomic) BTMoviePlayerView *playerView;
+@property (assign, nonatomic) BOOL seekToZeroBeforePlay;
+@property (strong, nonatomic) NSMutableArray *errors;
+@property (strong, nonatomic) AVMutableAudioMix *audioMix;
 @end
 
 
@@ -118,6 +118,18 @@ static void *BTMoviePlayerControllerReadyForDisplayObservationContext = &BTMovie
         // create player item
         dispatch_async(dispatch_get_main_queue(), ^{
             
+            NSError *error;
+            AVKeyValueStatus status = [asset statusOfValueForKey:kTracksKey error:&error];
+            if (!status) {
+                NSString *localizedDescription = NSLocalizedString(@"Asset's tracks were not loaded", nil);
+                NSString *localizedFailureReason = error.localizedDescription;
+                NSDictionary *errorDict = @{NSLocalizedDescriptionKey: localizedDescription,
+                                            NSLocalizedFailureReasonErrorKey: localizedFailureReason};
+                NSError *error = [NSError errorWithDomain:kErrorDomain code:0 userInfo:errorDict];
+                [self assetFailedToPrepareForPlayback:error];
+                return;
+            }
+            
             // make sure that the value of each key has loaded successfully.
             for (NSString *key in requestedKeys) {
                 
@@ -134,9 +146,10 @@ static void *BTMoviePlayerControllerReadyForDisplayObservationContext = &BTMovie
                 
                 NSString *localizedDescription = NSLocalizedString(@"Item cannot be played", @"Item cannot be played description");
                 NSString *localizedFailureReason = NSLocalizedString(@"The assets tracks were loaded, but could not be made playable.", @"Item cannot be played failure reason");
-                NSDictionary *errorDict = [NSDictionary dictionaryWithObjectsAndKeys: localizedDescription, NSLocalizedDescriptionKey, localizedFailureReason, NSLocalizedFailureReasonErrorKey, nil];
-                NSError *assetCannotBePlayedError = [NSError errorWithDomain:kErrorDomain code:0 userInfo:errorDict];
-                [self assetFailedToPrepareForPlayback:assetCannotBePlayedError];
+                NSDictionary *errorDict = @{NSLocalizedDescriptionKey: localizedDescription,
+                                            NSLocalizedFailureReasonErrorKey: localizedFailureReason};
+                NSError *error = [NSError errorWithDomain:kErrorDomain code:0 userInfo:errorDict];
+                [self assetFailedToPrepareForPlayback:error];
                 return;
             }
             

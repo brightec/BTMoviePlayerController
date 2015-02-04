@@ -14,12 +14,12 @@
 
 
 @interface BTVideoPlayerViewController ()
-@property (nonatomic) BTMoviePlayerController *moviePlayerController;
-@property (nonatomic) BTVideoOverlay *overlayView;
-@property (nonatomic) NSTimer *timer;
-@property (nonatomic) float preMuteVolumeLevel;
-@property (nonatomic) BTMovieScalingMode scalingMode;
-@property (nonatomic) MPVolumeView *volumeView;
+@property (strong, nonatomic) BTMoviePlayerController *moviePlayerController;
+@property (strong, nonatomic) BTVideoOverlay *overlayView;
+@property (strong, nonatomic) NSTimer *timer;
+@property (assign, nonatomic) float preMuteVolumeLevel;
+@property (assign, nonatomic) BTMovieScalingMode scalingMode;
+@property (strong, nonatomic) MPVolumeView *volumeView;
 @end
 
 
@@ -62,19 +62,17 @@
     [self.view addSubview:overlayView];
     self.overlayView = overlayView;
     
-    if (self.moviePlayerController == nil) {
-        self.moviePlayerController = [[BTMoviePlayerController alloc] init];
-        [self.moviePlayerController setContentURL:self.contentURL];
-        self.moviePlayerController.scalingMode = self.scalingMode;
-        self.moviePlayerController.allowsAirPlay = YES;        
-        [self.moviePlayerController preapreToPlay];
-        
-        UIView *view = self.moviePlayerController.view;
-        view.frame = self.view.bounds;
-        view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
-        [self.view insertSubview:view atIndex:0];
-        [self updateButtonStates];
-    }
+    // create movie player controller
+    self.moviePlayerController = [[BTMoviePlayerController alloc] init];
+    [self.moviePlayerController setContentURL:self.contentURL];
+    self.moviePlayerController.scalingMode = self.scalingMode;
+    self.moviePlayerController.allowsAirPlay = YES;
+    
+    UIView *view = self.moviePlayerController.view;
+    view.frame = self.view.bounds;
+    view.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+    [self.view insertSubview:view atIndex:0];
+    [self updateButtonStates];
     
     // add airplay icon
     UIView *bottomBar = self.overlayView.volumeButton.superview;
@@ -109,6 +107,8 @@
     
     [[UIApplication sharedApplication] beginReceivingRemoteControlEvents];
     [self becomeFirstResponder];
+    
+    [self.moviePlayerController preapreToPlay];
 }
 
 
@@ -155,8 +155,8 @@
     [self updateButtonStates];
     
     if (self.timer == nil) {
-        self.timer = [NSTimer timerWithTimeInterval:0.5 target:self selector:@selector(timerIntervalFired:) userInfo:nil repeats:YES];
-        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
+//        self.timer = [NSTimer timerWithTimeInterval:0.5 target:self selector:@selector(timerIntervalFired:) userInfo:nil repeats:YES];
+//        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
     }
 }
 
