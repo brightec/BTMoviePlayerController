@@ -1,15 +1,14 @@
 //
-//  TNProgress.m
-//  tennis
+//  BTProgress.m
 //
 //  Created by Cameron Cooke on 11/04/2013.
 //  Copyright (c) 2013 Brightec Ltd. All rights reserved.
 //
 
-#import "TNProgress.h"
+#import "BTProgress.h"
 
 
-@implementation TNProgress
+@implementation BTProgress
 
 
 - (id)initWithFrame:(CGRect)frame

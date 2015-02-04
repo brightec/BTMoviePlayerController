@@ -7,7 +7,7 @@
 //
 
 #import "BTVideoPlayerViewController.h"
-#import "TNVideoOverlay.h"
+#import "BTVideoOverlay.h"
 #import "BTMoviePlayerController.h"
 #import <CoreMedia/CoreMedia.h>
 #import <MediaPlayer/MediaPlayer.h>
@@ -15,7 +15,7 @@
 
 @interface BTVideoPlayerViewController ()
 @property (nonatomic) BTMoviePlayerController *moviePlayerController;
-@property (nonatomic) TNVideoOverlay *overlayView;
+@property (nonatomic) BTVideoOverlay *overlayView;
 @property (nonatomic) NSTimer *timer;
 @property (nonatomic) float preMuteVolumeLevel;
 @property (nonatomic) BTMovieScalingMode scalingMode;
@@ -53,8 +53,8 @@
     [super viewDidLoad];
     
     // create overlay controls view
-    NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"TNVideoOverlay" owner:self options:nil];
-    TNVideoOverlay *overlayView = views[0];
+    NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"BTVideoOverlay" owner:self options:nil];
+    BTVideoOverlay *overlayView = views[0];
     overlayView.frame = self.view.bounds;
     overlayView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
     overlayView.backgroundColor = [UIColor clearColor];
@@ -141,7 +141,7 @@
 
 
 # pragma mark -
-# pragma mark TNVideoOverlay
+# pragma mark BTVideoOverlay
 
 - (void)playPauseButtonWasTouched:(UIButton *)playButton
 {
@@ -186,7 +186,7 @@
 }
 
 
-- (void)timelineBar:(TNTimelineBar *)timelineBar valueWasChanged:(float)value
+- (void)timelineBar:(BTTimelineBar *)timelineBar valueWasChanged:(float)value
 {
     self.moviePlayerController.currentPlaybackTime = value;
 }

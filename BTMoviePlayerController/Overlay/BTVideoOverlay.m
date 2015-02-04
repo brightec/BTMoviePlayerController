@@ -1,26 +1,25 @@
 //
-//  TNVideoOverlay.m
-//  tennis
+//  BTVideoOverlay.m
 //
 //  Created by Cameron Cooke on 22/03/2013.
 //  Copyright (c) 2013 Brightec Ltd. All rights reserved.
 //
 
-#import "TNVideoOverlay.h"
+#import "BTVideoOverlay.h"
 
 
-@interface TNVideoOverlay ()
+@interface BTVideoOverlay ()
 @end
 
 
-@implementation TNVideoOverlay
+@implementation BTVideoOverlay
 
 
 - (void)awakeFromNib
 {
     [super awakeFromNib];
     
-    NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"TNTimelineBar" owner:self options:nil];
+    NSArray *views = [[NSBundle mainBundle] loadNibNamed:@"BTTimelineBar" owner:self options:nil];
     self.timelineBar = views[0];
     self.timelineBar.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleTopMargin|UIViewAutoresizingFlexibleBottomMargin;
     

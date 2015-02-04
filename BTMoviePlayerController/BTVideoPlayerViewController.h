@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TNTimelineBar.h"
+#import "BTTimelineBar.h"
 
 
-@interface BTVideoPlayerViewController : UIViewController <TNTimelineBarDelegate>
+@interface BTVideoPlayerViewController : UIViewController <BTTimelineBarDelegate>
 @property (nonatomic) NSURL *contentURL;
 @end

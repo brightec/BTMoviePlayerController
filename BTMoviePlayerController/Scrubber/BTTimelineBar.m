@@ -1,26 +1,25 @@
 //
-//  TNTimelimeBar.m
-//  tennis
+//  BTTimelineBar.m
 //
 //  Created by Cameron Cooke on 10/04/2013.
 //  Copyright (c) 2013 Brightec Ltd. All rights reserved.
 //
 
-#import "TNTimelineBar.h"
-#import "TNProgress.h"
-#import "TNMediaSlider.h"
+#import "BTTimelineBar.h"
+#import "BTProgress.h"
+#import "BTMediaSlider.h"
 
-@interface TNTimelineBar ()
+@interface BTTimelineBar ()
 @property (nonatomic, weak) IBOutlet UILabel *timeLabel;
 @property (nonatomic, weak) IBOutlet UILabel *lengthLabel;
-@property (nonatomic, weak) IBOutlet TNMediaSlider *mediaSlider;
-@property (nonatomic, strong) TNProgress *progressBar;
+@property (nonatomic, weak) IBOutlet BTMediaSlider *mediaSlider;
+@property (nonatomic, strong) BTProgress *progressBar;
 @property (nonatomic) BOOL isTouchingDown;
 @end
 
 
 
-@implementation TNTimelineBar
+@implementation BTTimelineBar
 
 
 - (void)dealloc
@@ -42,7 +41,7 @@
     [self.mediaSlider addTarget:self action:@selector(sliderTouchDown:) forControlEvents:UIControlEventTouchDown];
     
     // create progress bar
-    TNProgress *progressBar = [[TNProgress alloc] initWithFrame:CGRectZero];
+    BTProgress *progressBar = [[BTProgress alloc] initWithFrame:CGRectZero];
     progressBar.autoresizesSubviews = self.mediaSlider.autoresizingMask;
     progressBar.value = 0.0f;
     progressBar.secondValue = 0.0f;
@@ -62,13 +61,13 @@
 }
 
 
-- (void)sliderValueChanged:(TNMediaSlider *)slider
+- (void)sliderValueChanged:(BTMediaSlider *)slider
 {
     self.timeLabel.text = [self timeAsFormattedString:slider.value];    
 }
 
 
-- (void)sliderTouchedUpInside:(TNMediaSlider *)slider
+- (void)sliderTouchedUpInside:(BTMediaSlider *)slider
 {
     NSLog(@"Touch up!");
     self.value = slider.value;
@@ -76,7 +75,7 @@
     self.isTouchingDown = NO;    
 }
 
-- (void)sliderTouchDown:(TNMediaSlider *)slider
+- (void)sliderTouchDown:(BTMediaSlider *)slider
 {
     NSLog(@"Touch down!");
     self.isTouchingDown = YES;

@@ -1,6 +1,5 @@
 //
-//  TNTimelimeBar.h
-//  tennis
+//  BTTimelineBar.h
 //
 //  Created by Cameron Cooke on 10/04/2013.
 //  Copyright (c) 2013 Brightec Ltd. All rights reserved.
@@ -9,19 +8,19 @@
 #import <UIKit/UIKit.h>
 
 
-@protocol TNTimelineBarDelegate;
+@protocol BTTimelineBarDelegate;
 
 
-@interface TNTimelineBar : UIView
+@interface BTTimelineBar : UIView
 @property (nonatomic) NSTimeInterval value;
 @property (nonatomic) NSTimeInterval secondValue;
 @property (nonatomic) NSTimeInterval minValue;
 @property (nonatomic) NSTimeInterval maxValue;
 
-@property (nonatomic, weak) id<TNTimelineBarDelegate>delegate;
+@property (nonatomic, weak) id<BTTimelineBarDelegate>delegate;
 @end
 
 
-@protocol TNTimelineBarDelegate <NSObject>
-- (void)timelineBar:(TNTimelineBar *)timelineBar valueWasChanged:(float)value;
+@protocol BTTimelineBarDelegate <NSObject>
+- (void)timelineBar:(BTTimelineBar *)timelineBar valueWasChanged:(float)value;
 @end

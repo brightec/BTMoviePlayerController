@@ -1,6 +1,5 @@
 //
-//  TNProgress.h
-//  tennis
+//  BTProgress.h
 //
 //  Created by Cameron Cooke on 11/04/2013.
 //  Copyright (c) 2013 Brightec Ltd. All rights reserved.
@@ -9,7 +8,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface TNProgress : UIView
+@interface BTProgress : UIView
 @property (nonatomic) float value;
 @property (nonatomic) float secondValue;
 

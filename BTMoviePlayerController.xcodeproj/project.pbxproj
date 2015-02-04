@@ -40,12 +40,12 @@
 		7E8F87D317185035006F681D /* slowIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87C317185035006F681D /* slowIcon@2x.png */; };
 		7E8F87D417185035006F681D /* unmuteIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87C417185035006F681D /* unmuteIcon.png */; };
 		7E8F87D517185035006F681D /* unmuteIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87C517185035006F681D /* unmuteIcon@2x.png */; };
-		7E8F87DD1718503D006F681D /* TNMediaSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F87D71718503D006F681D /* TNMediaSlider.m */; };
-		7E8F87DE1718503D006F681D /* TNProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F87D91718503D006F681D /* TNProgress.m */; };
-		7E8F87DF1718503D006F681D /* TNTimelineBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F87DB1718503D006F681D /* TNTimelineBar.m */; };
-		7E8F87E01718503D006F681D /* TNTimelineBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87DC1718503D006F681D /* TNTimelineBar.xib */; };
-		7E8F87E517185098006F681D /* TNVideoOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F87E317185098006F681D /* TNVideoOverlay.m */; };
-		7E8F87E617185098006F681D /* TNVideoOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87E417185098006F681D /* TNVideoOverlay.xib */; };
+		7E8F87DD1718503D006F681D /* BTMediaSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F87D71718503D006F681D /* BTMediaSlider.m */; };
+		7E8F87DE1718503D006F681D /* BTProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F87D91718503D006F681D /* BTProgress.m */; };
+		7E8F87DF1718503D006F681D /* BTTimelineBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F87DB1718503D006F681D /* BTTimelineBar.m */; };
+		7E8F87E01718503D006F681D /* BTTimelineBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87DC1718503D006F681D /* BTTimelineBar.xib */; };
+		7E8F87E517185098006F681D /* BTVideoOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8F87E317185098006F681D /* BTVideoOverlay.m */; };
+		7E8F87E617185098006F681D /* BTVideoOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87E417185098006F681D /* BTVideoOverlay.xib */; };
 		7E92DB861A8220F800833E16 /* BigBuckBunny_640x360.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 7E8F87AF17182F62006F681D /* BigBuckBunny_640x360.m4v */; };
 		7EA115AE171C18D6005AAAE3 /* BTMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EA115AD171C18D6005AAAE3 /* BTMenuViewController.m */; };
 		7EA115B1171C3481005AAAE3 /* stopIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7EA115AF171C3481005AAAE3 /* stopIcon.png */; };
@@ -94,16 +94,16 @@
 		7E8F87C317185035006F681D /* slowIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "slowIcon@2x.png"; path = "Images/slowIcon@2x.png"; sourceTree = "<group>"; };
 		7E8F87C417185035006F681D /* unmuteIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = unmuteIcon.png; path = Images/unmuteIcon.png; sourceTree = "<group>"; };
 		7E8F87C517185035006F681D /* unmuteIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "unmuteIcon@2x.png"; path = "Images/unmuteIcon@2x.png"; sourceTree = "<group>"; };
-		7E8F87D61718503D006F681D /* TNMediaSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNMediaSlider.h; path = Scrubber/TNMediaSlider.h; sourceTree = "<group>"; };
-		7E8F87D71718503D006F681D /* TNMediaSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TNMediaSlider.m; path = Scrubber/TNMediaSlider.m; sourceTree = "<group>"; };
-		7E8F87D81718503D006F681D /* TNProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNProgress.h; path = Scrubber/TNProgress.h; sourceTree = "<group>"; };
-		7E8F87D91718503D006F681D /* TNProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TNProgress.m; path = Scrubber/TNProgress.m; sourceTree = "<group>"; };
-		7E8F87DA1718503D006F681D /* TNTimelineBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNTimelineBar.h; path = Scrubber/TNTimelineBar.h; sourceTree = "<group>"; };
-		7E8F87DB1718503D006F681D /* TNTimelineBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TNTimelineBar.m; path = Scrubber/TNTimelineBar.m; sourceTree = "<group>"; };
-		7E8F87DC1718503D006F681D /* TNTimelineBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TNTimelineBar.xib; path = Scrubber/TNTimelineBar.xib; sourceTree = "<group>"; };
-		7E8F87E217185098006F681D /* TNVideoOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNVideoOverlay.h; path = Overlay/TNVideoOverlay.h; sourceTree = "<group>"; };
-		7E8F87E317185098006F681D /* TNVideoOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TNVideoOverlay.m; path = Overlay/TNVideoOverlay.m; sourceTree = "<group>"; };
-		7E8F87E417185098006F681D /* TNVideoOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TNVideoOverlay.xib; path = Overlay/TNVideoOverlay.xib; sourceTree = "<group>"; };
+		7E8F87D61718503D006F681D /* BTMediaSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTMediaSlider.h; path = Scrubber/BTMediaSlider.h; sourceTree = "<group>"; };
+		7E8F87D71718503D006F681D /* BTMediaSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTMediaSlider.m; path = Scrubber/BTMediaSlider.m; sourceTree = "<group>"; };
+		7E8F87D81718503D006F681D /* BTProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTProgress.h; path = Scrubber/BTProgress.h; sourceTree = "<group>"; };
+		7E8F87D91718503D006F681D /* BTProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTProgress.m; path = Scrubber/BTProgress.m; sourceTree = "<group>"; };
+		7E8F87DA1718503D006F681D /* BTTimelineBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTTimelineBar.h; path = Scrubber/BTTimelineBar.h; sourceTree = "<group>"; };
+		7E8F87DB1718503D006F681D /* BTTimelineBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTTimelineBar.m; path = Scrubber/BTTimelineBar.m; sourceTree = "<group>"; };
+		7E8F87DC1718503D006F681D /* BTTimelineBar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BTTimelineBar.xib; path = Scrubber/BTTimelineBar.xib; sourceTree = "<group>"; };
+		7E8F87E217185098006F681D /* BTVideoOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BTVideoOverlay.h; path = Overlay/BTVideoOverlay.h; sourceTree = "<group>"; };
+		7E8F87E317185098006F681D /* BTVideoOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BTVideoOverlay.m; path = Overlay/BTVideoOverlay.m; sourceTree = "<group>"; };
+		7E8F87E417185098006F681D /* BTVideoOverlay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = BTVideoOverlay.xib; path = Overlay/BTVideoOverlay.xib; sourceTree = "<group>"; };
 		7EA115AC171C18D6005AAAE3 /* BTMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTMenuViewController.h; sourceTree = "<group>"; };
 		7EA115AD171C18D6005AAAE3 /* BTMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTMenuViewController.m; sourceTree = "<group>"; };
 		7EA115AF171C3481005AAAE3 /* stopIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = stopIcon.png; path = Images/stopIcon.png; sourceTree = "<group>"; };
@@ -219,13 +219,13 @@
 		7E8F87B417185026006F681D /* Scrubber */ = {
 			isa = PBXGroup;
 			children = (
-				7E8F87D61718503D006F681D /* TNMediaSlider.h */,
-				7E8F87D71718503D006F681D /* TNMediaSlider.m */,
-				7E8F87D81718503D006F681D /* TNProgress.h */,
-				7E8F87D91718503D006F681D /* TNProgress.m */,
-				7E8F87DA1718503D006F681D /* TNTimelineBar.h */,
-				7E8F87DB1718503D006F681D /* TNTimelineBar.m */,
-				7E8F87DC1718503D006F681D /* TNTimelineBar.xib */,
+				7E8F87D61718503D006F681D /* BTMediaSlider.h */,
+				7E8F87D71718503D006F681D /* BTMediaSlider.m */,
+				7E8F87D81718503D006F681D /* BTProgress.h */,
+				7E8F87D91718503D006F681D /* BTProgress.m */,
+				7E8F87DA1718503D006F681D /* BTTimelineBar.h */,
+				7E8F87DB1718503D006F681D /* BTTimelineBar.m */,
+				7E8F87DC1718503D006F681D /* BTTimelineBar.xib */,
 			);
 			name = Scrubber;
 			sourceTree = "<group>";
@@ -260,9 +260,9 @@
 		7E8F87E117185073006F681D /* Overlay */ = {
 			isa = PBXGroup;
 			children = (
-				7E8F87E217185098006F681D /* TNVideoOverlay.h */,
-				7E8F87E317185098006F681D /* TNVideoOverlay.m */,
-				7E8F87E417185098006F681D /* TNVideoOverlay.xib */,
+				7E8F87E217185098006F681D /* BTVideoOverlay.h */,
+				7E8F87E317185098006F681D /* BTVideoOverlay.m */,
+				7E8F87E417185098006F681D /* BTVideoOverlay.xib */,
 			);
 			name = Overlay;
 			sourceTree = "<group>";
@@ -341,8 +341,8 @@
 				7E8F87D317185035006F681D /* slowIcon@2x.png in Resources */,
 				7E8F87D417185035006F681D /* unmuteIcon.png in Resources */,
 				7E8F87D517185035006F681D /* unmuteIcon@2x.png in Resources */,
-				7E8F87E01718503D006F681D /* TNTimelineBar.xib in Resources */,
-				7E8F87E617185098006F681D /* TNVideoOverlay.xib in Resources */,
+				7E8F87E01718503D006F681D /* BTTimelineBar.xib in Resources */,
+				7E8F87E617185098006F681D /* BTVideoOverlay.xib in Resources */,
 				7EA115B1171C3481005AAAE3 /* stopIcon.png in Resources */,
 				7EA115B2171C3481005AAAE3 /* stopIcon@2x.png in Resources */,
 				7E86AE46171C6C3000B18D26 /* airplayIcon.png in Resources */,
@@ -360,10 +360,10 @@
 				7E8F878E17181F8E006F681D /* main.m in Sources */,
 				7E8F879217181F8E006F681D /* BTAppDelegate.m in Sources */,
 				7E8F879E17181F8E006F681D /* BTVideoPlayerViewController.m in Sources */,
-				7E8F87DD1718503D006F681D /* TNMediaSlider.m in Sources */,
-				7E8F87DE1718503D006F681D /* TNProgress.m in Sources */,
-				7E8F87DF1718503D006F681D /* TNTimelineBar.m in Sources */,
-				7E8F87E517185098006F681D /* TNVideoOverlay.m in Sources */,
+				7E8F87DD1718503D006F681D /* BTMediaSlider.m in Sources */,
+				7E8F87DE1718503D006F681D /* BTProgress.m in Sources */,
+				7E8F87DF1718503D006F681D /* BTTimelineBar.m in Sources */,
+				7E8F87E517185098006F681D /* BTVideoOverlay.m in Sources */,
 				7EA115AE171C18D6005AAAE3 /* BTMenuViewController.m in Sources */,
 				7EBDAE92171D4FF000F57A8A /* BTMoviePlayerController.m in Sources */,
 				7EBDAE93171D4FF000F57A8A /* BTMoviePlayerView.m in Sources */,
