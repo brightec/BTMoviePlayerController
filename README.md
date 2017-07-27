@@ -1,3 +1,5 @@
+:warning: **Announcement: This library is no longer being actively developed.**  
+
 # BTMoviePlayerController
 Brightec BTMoviePlayerController based on AVPlayer. Supports volume level adjustments.
 
